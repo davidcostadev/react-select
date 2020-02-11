@@ -129,7 +129,7 @@ class Select extends React.Component {
 		}
 	}
 
-	componentWillReceiveProps (nextProps) {
+	UNSAFE_componentWillReceiveProps (nextProps) {
 		const valueArray = this.getValueArray(nextProps.value, nextProps);
 
 		if (nextProps.required) {

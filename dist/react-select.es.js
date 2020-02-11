@@ -177,6 +177,7 @@ var blockEvent = (function (event) {
 	}
 });
 
+var babelHelpers = {};
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
   return typeof obj;
 } : function (obj) {
@@ -406,6 +407,28 @@ var possibleConstructorReturn = function (self, call) {
 
   return call && (typeof call === "object" || typeof call === "function") ? call : self;
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+babelHelpers;
 
 var Option = function (_React$Component) {
 	inherits(Option, _React$Component);
@@ -743,8 +766,8 @@ var Select$1 = function (_React$Component) {
 			}
 		}
 	}, {
-		key: 'componentWillReceiveProps',
-		value: function componentWillReceiveProps(nextProps) {
+		key: 'UNSAFE_componentWillReceiveProps',
+		value: function UNSAFE_componentWillReceiveProps(nextProps) {
 			var valueArray = this.getValueArray(nextProps.value, nextProps);
 
 			if (nextProps.required) {
@@ -2097,8 +2120,8 @@ var Async = function (_Component) {
 			}
 		}
 	}, {
-		key: 'componentWillReceiveProps',
-		value: function componentWillReceiveProps(nextProps) {
+		key: 'UNSAFE_componentWillReceiveProps',
+		value: function UNSAFE_componentWillReceiveProps(nextProps) {
 			if (nextProps.options !== this.props.options) {
 				this.setState({
 					options: nextProps.options
