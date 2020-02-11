@@ -726,8 +726,8 @@ var Select$1 = function (_React$Component) {
 	}
 
 	createClass(Select, [{
-		key: 'componentWillMount',
-		value: function componentWillMount() {
+		key: 'UNSAFE_componentWillMount',
+		value: function UNSAFE_componentWillMount() {
 			this._instancePrefix = 'react-select-' + (this.props.instanceId || ++instanceId) + '-';
 			var valueArray = this.getValueArray(this.props.value);
 

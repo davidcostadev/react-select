@@ -109,7 +109,7 @@ class Select extends React.Component {
 		};
 	}
 
-	componentWillMount () {
+	UNSAFE_componentWillMount () {
 		this._instancePrefix = `react-select-${(this.props.instanceId || ++instanceId)}-`;
 		const valueArray = this.getValueArray(this.props.value);
 
